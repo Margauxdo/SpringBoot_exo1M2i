@@ -7,12 +7,11 @@
 <body>
 
 <h1> Todos</h1>
-    <h2>Todo</h2>
 
-<p> Todo Course : <span th:text="${course}"></span></p>
-<p> Todo Sport : <span th:text="${sport}"></span></p>
 
-    <h2>Todolist</h2>
+
+
+
 
 <p  th:if="${todos.isEmpty()}">Liste vide</p>
 <ul th:unless="${todos.isEmpty()}">
