@@ -24,5 +24,16 @@ public class TodoController {
         return "todos";
 
     }
+    @RequestMapping("/todo")
+    public String getTodo(Model model, Long id) {
+        model.addAttribute(1);
+        model.addAttribute(2);
+        List<Todo> todos = List.of();
+        model.addAttribute("todos", todoService.getTodos());
+        return "todo";
+
+    }
+
+
 
 }
