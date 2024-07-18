@@ -6,7 +6,13 @@
 </head>
 <body>
 
-<h1> TodoList</h1>
+<h1> Todos</h1>
+    <h2>Todo</h2>
+
+<p> Todo Name : <span th:text="${name}"></span></p>
+<p> Todo Description : <span th:text="${description}"></span></p>
+
+    <h2>Todolist</h2>
 
 <p  th:if="${todos.isEmpty()}">Liste vide</p>
 <ul th:unless="${todos.isEmpty()}">
